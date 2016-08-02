@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h3><u>Formular de rezervare</u></h3>
+    <form method="GET" action="ReservationResult.html" target="_blank">
+        <p>Data Rezervare</p>
+        <table border="1">
+            <tr>
+                <td>
+                    <b>Check-in</b>
+                </td>
+                <td>
+                    <input type="date"  />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Check-out</b>
+                </td>
+                <td>
+                    <input type="date"  />
+                </td>
+            </tr>
+        </table>
+        <p>Alegeti tipul de camera dorita:</p>
+
+        <table border="1" style="border-width:1px;">
+            <tr style="border: 1px solid black">
+                <td><strong>Alegeti tipul camerei:</strong></td>
+                <td>
+                    <select style="width:200px">
+                        <option value="single">Single</option>
+                        <option value="double">Double</option>
+                        <option value="triple">Triple</option>
+                    </select>
+                </td>
+            </tr>
+            <tr style="border: 1px solid black">
+                <td style="width:200px"><strong>Alegeti dotari camera</strong></td>
+                <td>
+                    <input type="checkbox" name="cbTelevizor" value="televizor" />Televizor<br />
+                    <input type="checkbox" name="cbVedereCatrePlaja" value="vedereplaja" />Vedere catre plaja<br />
+                    <input type="checkbox" name="cbBaieProprie" value="baieproprie" />Baie proprie<br />
+                    <input type="checkbox" name="cbAccesInternet" value="accesinternet" />Acess internet<br />
+                </td>
+            </tr>
+            <tr style="border: 1px solid black">
+                <td><strong>Alegeti modalitatea de plata</strong></td>
+                <td>
+                    <input type="radio" name="rbmodPlata" value="receptienumerar" />La receptie prin numerar<br />
+                    <input type="radio" name="rbmodPlata" value="receptiecardcredit" />La receptie cu Card de credit<br />
+                    <input type="radio" name="rbmodPlata" value="plataonline" />Plata on-line anicipata<br />
+                    <input type="radio" name="rbmodPlata" value="transferbancar" />Transfer bancar<br />
+                </td>
+            </tr>
+            <tr style="border: 1px solid black">
+                <td>
+                    <p><strong>Alte observatii</strong></p>
+                    <textarea style="width:300px;height:200px">
+                        Introduceti aici infirmatii suplimentare despre camera dorita!
+                    </textarea>
+                </td>
+            </tr>
+        </table>
+
+        <p><u>Informatii Client</u></p>
+        <table border="1">
+            <tr>
+            <td style="width: 310px"><strong>Nume si prenume:</strong></td>
+            <td style="width: 250px"><input type="text" name="textBoxNumePrenume" /></td>
+            </tr>
+            <tr>
+                <td><strong>Varsa:</strong></td>
+                <td><input type="text" name="textBoxVarsa" /></td>
+            </tr>
+            <tr>
+                <td><strong>Adresa:</strong></td>
+                <td><input type="text" name="textBoxAdresa" value="Introduceti aici adresa dumneavoastra" /></td>
+            </tr>
+            <tr>
+                <td><strong>Telefon:</strong></td>
+                <td><input type="text" name="textBoxTelefon" /></td>
+            </tr>
+
+        </table>
+        <p><u>Validarea formularului :</u></p>
+        <table border="1">
+            <tr>
+                <td><b>Introduceti un numar :</b></td>
+                <td>
+                    <input type="number" required>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <br />
+<p>
+            <input type="submit" value="Rezerva" />
+            <input type="reset" value="Anuleaza" />
+        </p>
+    </form>
+</body>
+</html>
